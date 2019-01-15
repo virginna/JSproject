@@ -22,13 +22,16 @@ function newElement() {
 
 let close = document.getElementsByClassName("deleteButton");
 let i;
-let result;
+let deleteString = document.getElementsByClassName("toDo");
 for (i = 0; i < close.length; i++) {
     close[i].onclick = function() {
         if (confirm('Delete task?')) {
-           var div = this.parentElement;
+           let div = this.parentElement;
+               //deleteString[i]; this.parentElement;
             div.style.display = "none";
         }else (alert("task has not been deleted"));
 
     }
 }
+//
+//documentElement.children[1].firstChild.lastChild;
