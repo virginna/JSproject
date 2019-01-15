@@ -1,0 +1,107 @@
+* {
+    /*margin: 0;*/
+    padding: 0; }
+
+body {
+    font-family: Roboto, sans-serif;
+    max-width: 1600px; }
+
+a {
+    color: #ffffff; }
+
+/*p {*/
+    /*margin: 10px 0; }*/
+
+a:hover {
+    background-color: #e0d7e0;
+    color: #1f2d3e;
+    transition-duration: 0.5s; }
+
+
+.wrapper {
+    margin: 0 auto;
+    text-align: center;
+    padding-right: 15px;
+    padding-left: 15px; }
+
+.title p{
+    border: 0;
+    }
+/*.header {*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+/*}*/
+.add {
+    display: flex;
+    justify-content: center;
+}
+#newTask {
+    width: 100%;
+}
+.addButton {
+    align-items: end;
+    padding: 0 0 0 40px;
+    margin: 15px 0 0 37px;
+}
+.button {
+    padding: 10px 50px;
+    border: 1px solid #e0d7e0;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: #2196f3;
+
+}
+
+.button a {
+
+}
+li {
+    list-style: none;
+}
+.toDo, .done {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*margin: 20px;*/
+
+input {
+    height: 40px;
+}
+.task p{
+    background-color: #d2fff8;
+    /*padding: 10px 140px;*/
+    width: 100%;
+}
+
+
+.buttons {
+    display: flex;
+}
+p {
+    border: #a1a1a1 1px solid;
+}
+
+p, .date, .task, .confirmButton, .deleteButton {
+    padding: 10px;
+    margin: 0 0 15px 15px;
+}
+
+.confirmButton, .deleteButton {
+    background-color: #2196f3;
+    border-radius: 50%;
+    font-size: 30px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    color: #ffffff;
+}
+.confirmButton:hover, .deleteButton:hover {
+    background-color: #e0d7e0;
+    color: #1f2d3e;
+    transition-duration: 0.5s;
+}
+.confirmButton-done {
+    background-color: #e0d7e0;
+    color: #1f2d3e;
+}
