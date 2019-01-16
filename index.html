@@ -17,8 +17,8 @@
     </div>
     <div class="add">
         <div class="date">date</div>
-        <input type="text" id="newTask" size="40" placeholder="Task" onclick="newElement()">
-        <div class="addButton">
+        <input type="text" id="newTask" size="40" placeholder="Task">
+        <div class="addButton" onclick="return newElement()">
             <a href="#" class="button">Add</a>
         </div>
 
@@ -26,15 +26,16 @@
     <ul id="myUl">
         <li>
             <div class="toDo">
-            <div class="date">date</div>
-            <div class="task">
-                <p>Task for create user page</p>
+                <div class="date">date</div>
+                <div class="task">
+                    <p>Task for create user page</p>
 
-            </div>
-            <div class="buttons">
-                <div class="confirmButton"><a href="#"><i class="fas fa-check"></i></a></div>
-                <div class="deleteButton"><a href="#"><i class="fas fa-trash-alt"></i></a></div>
-            </div>
+                </div>
+                <div class="buttons">
+                    <div class="confirmButton"><a href="#"  onclick="return markDone(this)"><i class="fas fa-check"></i></a>
+                    </div>
+                    <div class="deleteButton"><a href="#"  onclick="return deleteTask(this)"><i class="fas fa-trash-alt"></i></a></div>
+                </div>
             </div>
         </li>
         <li>
@@ -45,8 +46,10 @@
 
                 </div>
                 <div class="buttons">
-                    <div class="confirmButton confirmButton-done"><a href="#"><i class="fas fa-check"></i></a></div>
-                    <div class="deleteButton"><a href="#"><i class="fas fa-trash-alt"></i></a></div>
+                    <div class="confirmButton  confirmButton-done"><a href="#" onclick="return markDone(this)"><i
+                            class="fas fa-check"></i></a></div>
+                    <div class="deleteButton"><a href="#" onclick="return deleteTask(this)"><i
+                            class="fas fa-trash-alt"></i></a></div>
                 </div>
             </div>
         </li>
