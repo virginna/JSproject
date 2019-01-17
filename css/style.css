@@ -33,15 +33,13 @@ a:hover {
 /*}*/
 .add {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 }
-#newTask {
-    width: 100%;
-}
+
 .addButton {
     align-items: end;
-    padding: 0 0 0 40px;
-    margin: 15px 0 0 37px;
+    padding: 0 0 0 15px;
+    margin: 10px 0 0 0;
 }
 .button {
     padding: 10px 50px;
@@ -49,12 +47,10 @@ a:hover {
     text-decoration: none;
     text-transform: uppercase;
     background-color: #2196f3;
+    /*width: 70%;*/
 
 }
 
-.button a {
-
-}
 li {
     list-style: none;
 }
@@ -70,23 +66,34 @@ input {
 }
 .task p{
     background-color: #d2fff8;
+    margin: 0;
     /*padding: 10px 140px;*/
-    width: 100%;
+    /*width: 100%;*/
 }
 
 
 .buttons {
     display: flex;
+    margin-top: -10px;
 }
 p {
     border: #a1a1a1 1px solid;
 }
 
-p, .date, .task, .confirmButton, .deleteButton {
+p, .date, .confirmButton, .deleteButton {
     padding: 10px;
     margin: 0 0 15px 15px;
 }
+.date {
+    width: 10%;
+}
 
+.task, input {
+    width: 70%;
+}
+.button {
+    width: 20%;
+}
 .confirmButton, .deleteButton {
     background-color: #2196f3;
     border-radius: 50%;
